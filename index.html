@@ -14,29 +14,37 @@
 
 <body>
   <nav>
-    <img src="/assets/img/logo.jpg" alt="Logo eurotecnica latam">
-    <ul>
-      <li><a href="#">QUIÉNES SOMOS</a></li>
-      <div class="vr"></div>
-      <li><a href="#">CONTÁCTANOS</a></li>
-      <div class="vr"></div>
+    <img src="/assets/img/logo.png" alt="Logo eurotecnica latam">
+    <div class="nav-links-container">
+      <ul class="nav-links">
+        <li><a class="navigation-link active" href="#">INICIO</a></li>
+        <div class="vr"></div>
+        <li><a class="navigation-link" href="#">NOSOTROS</a></li>
+        <div class="vr"></div>
 
-      <li><a href="#">ESTUDIOS</a></li>
-      <div class="vr"></div>
 
-      <li><a href="#">EVENTOS</a></li>
-      <div class="vr"></div>
+        <li><a class="navigation-link" href="#">ESTUDIOS</a></li>
+        <div class="vr"></div>
 
-      <li><a href="#">GALERÍA</a></li>
+        <li><a class="navigation-link" href="#">EVENTOS</a></li>
+        <div class="vr"></div>
 
-    </ul>
-    <div class="d-flex flex-row align-items-center justify-content-center">
+        <li><a class="navigation-link" href="#">GALERÍA</a></li>
+        <div class="vr"></div>
+
+        <li><a class="navigation-link" href="ubicanos.html">UBÍCANOS</a></li>
+        <div class="vr"></div>
+        <li><a class="navigation-link" href="#">CONTÁCTANOS</a></li>
+      </ul>
+    </div>
+
+    <div class="hamburger-container">
       <p class="mb-0 mr-2">MENÚ</p>
-      <div class="menu-icon">
+      <div class="menu-icon" id="btnHamburger">
 
-        <span></span>
-        <span></span>
-        <span></span>
+        <span class="hamburger-span"></span>
+        <span class="hamburger-span"></span>
+        <span class="hamburger-span"></span>
 
       </div>
     </div>
@@ -44,13 +52,19 @@
   </nav>
   <header>
     <div class="row">
-      <div class="col-4 header-title position-relative">
+      <div class="col-lg-4 col-12 header-title position-relative">
         <h1>EUROTÉCNICA <br> <span>LATAM</span></h1>
-        <img class="header-img" src="/assets/img/header-box.png" alt="">
+
+
+        <picture>
+          <source media="(max-width: 1024px)" srcset="/assets/img/header-box-2.png">
+          <source media="(min-width: 1024px)" srcset="/assets/img/header-box.png">
+          <img class="header-img" src="/assets/img/header-box.png" alt="">
+        </picture>
       </div>
 
-      <div class="col-8">
-        <video src="/assets/videos/opening-video.mp4" autoplay loop muted poster="/assets/img/opening-video-poster.jpg"></video>
+      <div class="col-lg-8 col-12">
+        <video id="start-video" src="/assets/videos/opening-video.mp4" autoplay loop muted playsinline poster="/assets/img/opening-video-poster.jpg"></video>
         <img class="d-none" src="/assets/img/opening-video-poster.jpg" alt="chondrofiller liquid video poster">
       </div>
     </div>
@@ -60,21 +74,21 @@
     <div class="row  product-container-one">
 
 
-      <div class="col-7">
+      <div class="col-lg-7 col-12">
         <h2>Nuestro Producto</h2>
         <p>
           <span class="red">ChondroFiller&reg;</span> es un novedoso implante de colágeno acelular destinado a estimular el tratamiento autorregenerativo de los defectos del cartílago articular, asegurando una alta calidad del carítlago tipo hialino refenerado en un corto período de tiempo. Es un producto adecuado para ser utilizado en el tratamiento de defectos del cartílago articular en rodilla, tobillo y hombros; resulta una alrtenativa eficaz a la osteotransferencia de autoinjerto, OATS por sus siglas en inglés, o las micro facturas para la formación de fibrocartílago.
         </p>
-        <p>
+        <p class="removable">
           <span class="red">ChondroFiller&reg; liquid</span> es la única matriz de colágeno condroconductora tridimensional inyectable patentada en una jeringa de dos cámaras lista para usar. El implante marcado CE es un dispositivo médico clase III, producido bajo condiciones GMP y es completamente "hecho en Alemania".
         </p>
       </div>
 
     </div>
 
-    <div class="row container product-container-two">
-      <div>
-        <p>
+    <div class="row product-container-two">
+      <div class="col-lg-6 offset-lg-6 col-12">
+        <p class="removable">
           <span class="red">ChondroFiller&reg; liquid</span> es el implante de cartílago ortobiológico con una tecnología de implantación única y patentada para defectos localizados de cartílago de espesor completo. Esta innovadora técnica de implantación de matriz libre de células permite el tratamiento regenerativo y eficaz de las lesiones del cartílago con una sola cirugía. El procedimiento rentable de un solo paso utiliza una innovadora jeringa de dos cámaras lista para usar y ofrece la aplicación más fácil para aplicaciones quirúrgicas artroscópicas o mínimamente invasivas. La aplicación se puede realizar con procedimientos de artroscopia, mini open y nano artroscopia altamente innovadores y también es posible realizarse en áreas de las articulaciones de difícil acceso.
         </p>
 
@@ -89,76 +103,112 @@
   </section>
 
   <section class="section-how-it-works">
-    <h2>¿CÓMO FUNCIONA <span>ChondroFiller&reg;</span>?
-    </h2>
-    <p>ChondroFiller&reg; liquid es una matriz de colágeno biológica libre de células y fue especialmente desarrollado para la regeneración del cartílago en las articulaciones. Solo es necesaria una intervención artroscópica para su uso. El ChondroFiller&reg; liquid se suministra en una jeringa de dos cámaras lista para usar. Además de una solución de colágeno tipo 1 nativo de alta pureza, también contiene una solución neutralizante. Ambas soluciones se mezclan usando un adaptador cuando se presionan. Después de la inyección en la zona del defecto, la matriz viscosa de colágeno se endurece en unos 3 a 5 minutos para formar un hidrogel, una matriz de implante dimensionalmente estable. Incluso las lesiones difíciles de alcanzar, las grietas y cavidades más finas se pueden rellenar con ChondroFiller&reg; liquid. No es necesario el uso de cola de fibrina, ni la perforación del hueso (microfractura).</p>
+    <div class="row flex-lg-row flex-column justify-content-lg-between align-items-center align-items-xxl-stretch">
+      <div class="col-lg-6 col-12 how-it-works-text-container d-flex justify-content-center align-items-center flex-column
+      ">
+        <h2><span>¿CÓMO FUNCIONA</span> <br>ChondroFiller&reg;?</h2>
+        <p>ChondroFiller&reg; liquid es una matriz de colágeno biológica libre de células y fue especialmente desarrollado para la regeneración del cartílago en las articulaciones. Solo es necesaria una intervención artroscópica para su uso. El ChondroFiller&reg; liquid se suministra en una jeringa de dos cámaras lista para usar. Además de una solución de colágeno tipo 1 nativo de alta pureza, también contiene una solución neutralizante. Ambas soluciones se mezclan usando un adaptador cuando se presionan. Después de la inyección en la zona del defecto, la matriz viscosa de colágeno se endurece en unos 3 a 5 minutos para formar un hidrogel, una matriz de implante dimensionalmente estable. Incluso las lesiones difíciles de alcanzar, las grietas y cavidades más finas se pueden rellenar con ChondroFiller&reg; liquid. No es necesario el uso de cola de fibrina, ni la perforación del hueso (microfractura).</p>
+
+      </div>
+
+      <div class="col-lg-6 col-12 offset-0 offset-lg-0 d-flex justify-content-center align-items-center steps-img-container">
+        <picture>
+          <source media="(max-width: 1024px)" srcset="/assets/img/how-it-works-sm.png">
+          <source media="(min-width: 1024px)" srcset="/assets/img/how-it-works-lg.png">
+          <img class="steps-img" src="/assets/img/how-it-works-lg.png" alt="how chondrofiller works steps">
+        </picture>
+
+      </div>
+    </div>
   </section>
 
   <section class="section-perks">
-    <h2>
-      Ventajas del <span>ChondroFiller&reg;</span>
-    </h2>
+    <div class="row">
+      <div class="col-lg-7 offset-lg-5 perks-title-container">
+        <h2>
+          <span>Ventajas del</span><br> ChondroFiller&reg;
+        </h2>
+      </div>
+      <div class="col-lg-6 offset-lg-6 col-10 offset-1 offset-lg-0 perks-container">
 
-    <p><span class="red">ChondroFiller&reg; liquid</span> es variable en forma, espesor y tamaño. Inmediatamente después de la inyección en la zona del defecto, se crea una matriz de implante dimensionalmente estable en aproximadamente 3 a 5 minutos. Incluso las lesiones de difícil acceso, las grietas y cavidades más finas se pueden rellenar con ChondroFiller® liquid.
-    </p>
+
+        <p><span class="red">ChondroFiller&reg; liquid</span> es variable en forma, espesor y tamaño. Inmediatamente después de la inyección en la zona del defecto, se crea una matriz de implante dimensionalmente estable en aproximadamente 3 a 5 minutos. Incluso las lesiones de difícil acceso, las grietas y cavidades más finas se pueden rellenar con ChondroFiller® liquid.</p>
 
 
-    <ul>
-      <li><img src="/assets/img/dash.png" alt="dash">Solo es necesario un procedimiento artroscópico. </li>
-      <li><img src="/assets/img/dash.png" alt="dash">El tiempo de operación es corto, por lo que se pueden reducir los riesgos relacionados con la operación.
-      </li>
-      <li><img src="/assets/img/dash.png" alt="dash">El material es acelular, por lo que no se requiere una biopsia adicional. </li>
-      <li><img src="/assets/img/dash.png" alt="dash">La matriz de colágeno se adapta al tamaño y la forma individuales del defecto del cartílago. </li>
-      <li><img src="/assets/img/dash.png" alt="dash">No se requiere pegamento de fibrina, ChondroFiller® liquid gelifica directamente en el defecto del cartílago. </li>
-      <li><img src="/assets/img/dash.png" alt="dash">ChondroFiller® liquid es fácil de usar. </li>
-      <li><img src="/assets/img/dash.png" alt="dash">ChondroFiller® liquid se suministra listo para usar en la práctica jeringa de dos cámaras. </li>
-      <li><img src="/assets/img/dash.png" alt="dash">El procedimiento de tratamiento es económico. </li>
-    </ul>
+        <ul>
+          <li><img src="/assets/img/dash.png" alt="dash">Solo es necesario un procedimiento artroscópico. </li>
+          <li><img src="/assets/img/dash.png" alt="dash">El tiempo de operación es corto, por lo que se pueden reducir los riesgos relacionados con la operación.
+          </li>
+          <li><img src="/assets/img/dash.png" alt="dash">El material es acelular, por lo que no se requiere una biopsia adicional. </li>
+          <li><img src="/assets/img/dash.png" alt="dash">La matriz de colágeno se adapta al tamaño y la forma individuales del defecto del cartílago. </li>
+          <li><img src="/assets/img/dash.png" alt="dash">No se requiere pegamento de fibrina, ChondroFiller® liquid gelifica directamente en el defecto del cartílago. </li>
+          <li><img src="/assets/img/dash.png" alt="dash">ChondroFiller® liquid es fácil de usar. </li>
+          <li><img src="/assets/img/dash.png" alt="dash">ChondroFiller® liquid se suministra listo para usar en la práctica jeringa de dos cámaras. </li>
+          <li><img src="/assets/img/dash.png" alt="dash">El procedimiento de tratamiento es económico. </li>
+        </ul>
 
-    <p>
-      ChondroFiller® liquid está disponible en diferentes volúmenes (1,0 mL - 1,5 mL - 2,3 mL) y es adecuado para el tratamiento de defectos de cartílago de grado 3 a 4 hasta un tamaño de 3 cm2.
-    </p>
+        <p>
+          <span class="red">ChondroFiller® liquid</span> está disponible en diferentes volúmenes (1,0 mL - 1,5 mL - 2,3 mL) y es adecuado para el tratamiento de defectos de cartílago de grado 3 a 4 hasta un tamaño de 3 cm2.
+        </p>
+      </div>
+    </div>
+
   </section>
 
-  <footer class="d-flex flex-row justify-content-between">
-    <div>
-      <h4>Eurotécnica Latam, S.A.</h4>
+  <footer class="">
+    <div class="footer-container row d-flex flex-column flex-lg-row align-items-center ">
+      <div class="col-6">
+        <h4 class="footer-title">Eurotécnica Latam, S.A.</h4>
 
-      <div>
-        <h4>Dirección:</h4>
-        <p>Calle La Rotonda, Urbanización costa del Este, Edificio Prime Time Tower, Piso 24, Oficina 24-A, Ciudad de Panamá.</p>
+        <div>
+          <div class="d-flex flex-row justify-content-lg-start justify-content-center align-items-center info-container mb-3">
+            <img src="/assets/icons/map-pin.svg" alt="">
+            <h4>Dirección</h4>
+
+          </div>
+          <p>Calle La Rotonda, Urbanización costa del Este, Edificio Prime Time Tower, Piso 24, Oficina 24-A, Ciudad de Panamá.</p>
+        </div>
+
+
       </div>
 
-      <div>
-        <h4>Teléfono</h4>
-        <p>+507-321-5294</p>
+      <div class="col-6">
+        <h4 class="footer-title">Contáctanos:</h4>
 
-      </div>
+        <div>
+          <div class="d-flex flex-row justify-content-lg-start justify-content-center align-items-center info-container mb-3">
+            <img src="/assets/icons/phone.svg" alt="">
+            <h4>Teléfono</h4>
 
-      <div>
-        <ul>
-          <li>gmoreno@eurotecnicalatam.com</li>
-          <li>vjimenez@eurotecnicalatam.com</li>
-          <li>hnotarandrea@eurotecnicalatam.com</li>
-        </ul>
+          </div>
+          <p>+507 321-5294</p>
+
+        </div>
+
+        <div>
+          <div class="d-flex flex-row justify-content-lg-start justify-content-center align-items-center info-container w-100 mb-3">
+            <img src="/assets/icons/email.svg" alt="">
+            <h4>Correo Electrónico</h4>
+
+          </div>
+          <ul>
+            <li>gmoreno@eurotecnicalatam.com</li>
+            <li>hnotarandrea@eurotecnicalatam.com</li>
+            <li>vjimenez@eurotecnicalatam.com</li>
+
+          </ul>
+        </div>
+
+
       </div>
     </div>
 
-    <div>
-      <h4>Siguenos en:</h4>
-
-      <div>
-        <ul>
-          <li>twitter</li>
-          <li>instagram</li>
-        </ul>
-      </div>
-
-      <p>Sitio web creado por <a href="#">MDN PUBLICIDAD</a></p>
-    </div>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.7.0.slim.min.js" integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE=" crossorigin="anonymous"></script>
+  <script src="/js/scripts.js"></script>
+  <script src="/js/start.js"></script>
 </body>
 
 </html>
