@@ -1,2 +1,5 @@
-/assets/docs
-/assets/videos
+# Ignore the /assets/docs folder and its contents
+/assets/docs/
+
+# Ignore the /assets/videos folder and its contents
+/assets/videos/

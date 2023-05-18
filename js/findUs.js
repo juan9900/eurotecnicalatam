@@ -38,6 +38,18 @@ const setCountryData = (country) => {
   laboratories[country].web === ""
     ? $("#laboratory-web").css("display", "none")
     : $("#laboratory-web").css("display", "block");
+
+  if (
+    laboratories[country].web === "" ||
+    laboratories[country].logoPath === ""
+  ) {
+    $(".laboratory-info-header").css("fontSize", "1.5em");
+    $("#laboratory-name").css("fontSize", "1.5em");
+  } else {
+    $(".laboratory-info-header").css("fontSize", "1em");
+    $("#laboratory-name").css("fontSize", "1em");
+  }
+
   $("#selected-country").text(laboratories[country].country);
   $("#laboratory-img").attr("src", laboratories[country].logoPath);
   $("#laboratory-web-link")
