@@ -59,3 +59,12 @@ $(".elegible").on("click", function () {
   $(".elegible").removeClass("active");
   $(this).addClass("active");
 });
+
+$(".country-list-item").on("click", function () {
+  $("html, body").animate(
+    {
+      scrollTop: $(".map-container").offset().top,
+    },
+    100
+  );
+});

@@ -7,3 +7,8 @@ $(btnHamburger).on("click", () => {
   $(hamburgerSpans).toggleClass("active");
   $(navLinks).toggleClass("active");
 });
+
+$("document").ready(() => {
+  const currentYear = new Date().getFullYear();
+  $("#footer-year").text(currentYear);
+});

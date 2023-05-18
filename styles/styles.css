@@ -6,6 +6,14 @@
   src: url("/assets/fonts/Exo2-SemiBoldItalic.ttf");
   font-family: "exo2-semibolditalic";
 }
+@font-face {
+  src: url("/assets/fonts/Exo2-Medium.ttf");
+  font-family: "exo2-medium";
+}
+@font-face {
+  src: url("/assets/fonts/Exo2-Regular.ttf");
+  font-family: "exo2-regular";
+}
 
 @font-face {
   src: url("/assets/fonts/Exo2-Bold.ttf");
@@ -50,6 +58,7 @@ li {
   --darkCharcoal: #333333;
   --primary: #e21d39;
   --grayBackground: #494949;
+  --lightGray: #dbdbdb;
 }
 
 h1 {
@@ -62,6 +71,11 @@ h1 {
   color: var(--primary);
   font-size: 3.8em;
   line-height: 60px;
+  text-transform: uppercase;
+}
+
+h1 span {
+  color: var(--darkCharcoal);
 }
 
 h2 {
@@ -349,7 +363,18 @@ header video {
 /* FOOTER */
 footer {
   background: var(--grayBackground);
-  padding: 2rem 0;
+  padding: 2rem 0 0 0;
+}
+
+.footer-mdn {
+  background: var(--offWhite);
+  color: var(--darkCharcoal);
+  font-size: 1em;
+}
+
+.footer-mdn a:link,
+.footer-mdn a:visited {
+  color: var(--darkCharcoal) !important;
 }
 
 footer p,
@@ -379,6 +404,7 @@ footer img {
 .footer-container {
   width: 80%;
   margin: 0 auto;
+  padding-bottom: 2rem;
 }
 
 .footer-container div {
@@ -406,6 +432,15 @@ footer img {
     rgba(255, 254, 254, 1) 10%,
     rgba(224, 223, 223, 1) 100%
   );
+  height: 40vh;
+}
+
+.section-location .row {
+  height: 100%;
+}
+.text-location-container,
+.text-location {
+  height: 100%;
 }
 .section-map {
   overflow: hidden;
@@ -430,6 +465,11 @@ footer img {
     rgba(255, 254, 254, 1) 10%,
     rgba(224, 223, 223, 1) 100%
   );
+  height: 100%;
+}
+
+.big-container {
+  height: 100%;
 }
 
 .text-location {
@@ -437,11 +477,11 @@ footer img {
   margin: 0 auto;
 }
 .text-location h2 {
-  font-size: 3.5em;
+  font-size: 2.5em;
 }
 
 .text-location p {
-  font-size: 1.7em;
+  font-size: 1.4em;
 }
 .planet-img {
   position: absolute;
@@ -619,13 +659,430 @@ footer img {
   color: var(--darkCharcoal);
 }
 
+/* US PAGE */
+.section-who-are-we {
+  background: url("/assets/img/quienes-somos-background.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 1rem 5rem;
+}
+
+.section-who-are-we img {
+  max-width: 60%;
+  padding: 1rem 0;
+}
+
+.section-who-are-we p {
+  width: 70%;
+  font-size: 1.5em;
+}
+
+.section-who-are-we h2 {
+  font-size: 2.6rem;
+}
+
+/* PAGE studies */
+
+.section-studies {
+  padding-top: 2rem;
+  background: rgb(255, 254, 254);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 254, 254, 1) 10%,
+    rgba(224, 223, 223, 1) 100%
+  );
+}
+
+.img-jogging {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 20%;
+}
+
+.section-studies h2 {
+  font-size: 3.5em;
+}
+.studies-list {
+  list-style-type: decimal;
+  color: var(--primary);
+}
+
+.studies-list li::marker {
+  color: var(--primary);
+}
+.studies-list li {
+  margin: 2rem 0;
+}
+
+.studies-list li p {
+  color: var(--primary);
+  font-family: "exo2-bolditalic";
+  font-size: 1em;
+}
+
+.studies-list li span,
+.studies-list li a {
+  color: var(--darkCharcoal);
+}
+
+.studies-list li a {
+  font-family: "exo2-bold";
+  padding-left: 1.5rem;
+}
+
+.study-title-container {
+  border-right: 3px solid var(--darkCharcoal);
+}
+
+/* EVENTS PAGE */
+.section-events {
+  background: rgb(255, 254, 254);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 254, 254, 1) 10%,
+    rgb(235, 235, 235) 100%
+  );
+
+  padding: 1.5rem;
+}
+
+.section-events h2 {
+  font-size: 3em;
+}
+.img-triangle-center {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(50%);
+}
+
+.events-list li {
+  margin: 2rem 0;
+}
+
+.events-list li p {
+  color: var(--primary);
+  font-family: "exo2-bold";
+}
+.events-list li p:first-of-type {
+  line-height: 2rem;
+}
+.events-list .styled-event p,
+.events-list .styled-event .event-location {
+  color: var(--offWhite);
+}
+
+.event-header {
+  background: rgb(226, 29, 57);
+  background: linear-gradient(
+    180deg,
+    rgba(226, 29, 57, 1) 50%,
+    rgba(179, 30, 51, 1) 100%
+  );
+  padding: 1rem 1rem 0.1rem 1rem;
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+}
+.events-list li .event-location {
+  color: var(--darkCharcoal);
+  font-family: "exo2-regular";
+  font-size: 1em;
+}
+
+.event-body {
+  background: #e0e0e0;
+  width: 100%;
+  height: 30rem;
+  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  grid-column-gap: 0px;
+  grid-row-gap: 0px;
+  overflow: hidden;
+}
+
+.event-body img,
+.event-body video {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  box-shadow: 0px 0px 10px #00000096;
+}
+
+.event-body div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.styled-event-1 .div1 {
+  grid-area: 1 / 1 / 13 / 5;
+  /* background: red; */
+}
+.styled-event-1 .div2 {
+  grid-area: 1 / 5/ 7 / 10;
+}
+
+.styled-event-1 .div3 {
+  grid-area: 7 / 5 / 13 / 10;
+}
+
+.styled-event-1 .div4 {
+  grid-area: 4 / 5 / 7 / 7;
+}
+
+.styled-event-2 .div1 {
+  grid-area: 1 / 1 / 7 / 4;
+}
+.styled-event-2 .div2 {
+  grid-area: 7 / 1 / 13 / 4;
+}
+.styled-event-2 .div3 {
+  grid-area: 1 / 4 / 13 / 7;
+}
+.styled-event-2 .div4 {
+  grid-area: 1 / 7 / 7 / 10;
+}
+.styled-event-2 .div5 {
+  grid-area: 7 / 7 / 13 / 10;
+}
+
+.styled-event-3 .div1 {
+  grid-area: 1 / 1 / 13 / 6;
+}
+.styled-event-3 .div2 {
+  grid-area: 1 / 6 / 13 / 10;
+}
+
+.styled-event-4 .div1 {
+  grid-area: 1 / 1 / 13 / 4;
+}
+.styled-event-4 .div2 {
+  grid-area: 1 / 4 / 13 / 7;
+}
+.styled-event-4 .div3 {
+  grid-area: 1 / 7 / 7 / 10;
+}
+.styled-event-4 .div4 {
+  grid-area: 7 / 7 / 13 / 10;
+}
+.styled-event-5 img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.styled-event-5 .div1 {
+  grid-area: 1 / 1 / 5 / 3;
+}
+.styled-event-5 .div2 {
+  grid-area: 5 / 1 / 9 / 3;
+}
+.styled-event-5 .div3 {
+  grid-area: 9 / 1 / 13 / 3;
+}
+.styled-event-5 .div4 {
+  grid-area: 1 / 3 / 13 / 6;
+}
+
+.styled-event-5 .div4 img {
+  object-fit: contain;
+  height: auto;
+  width: auto;
+}
+.styled-event-5 .div5 {
+  grid-area: 1 / 6 / 5 / 8;
+}
+.styled-event-5 .div6 {
+  grid-area: 5 / 6 / 9 / 8;
+}
+.styled-event-5 .div7 {
+  grid-area: 9 / 6 / 13 / 8;
+}
+.styled-event-5 .div8 {
+  grid-area: 1 / 8 / 5 / 10;
+}
+.styled-event-5 .div9 {
+  grid-area: 5 / 8 / 9 / 10;
+}
+.styled-event-5 .div10 {
+  grid-area: 9 / 8 / 13 / 10;
+}
+.styled-event-6 {
+  grid-template-columns: 12;
+}
+.styled-event-6 .div1 {
+  grid-area: 1 / 1 / 13 / 5;
+}
+.styled-event-6 .div2 {
+  grid-area: 1 / 6 / 13 / 12;
+}
+
+.styled-event-7 {
+  grid-template-columns: repeat(10, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+.styled-event-7 .div1 {
+  grid-area: 1 / 1 / 7 / 3;
+}
+.styled-event-7 .div2 {
+  grid-area: 1 / 3 / 7 / 5;
+}
+.styled-event-7 .div3 {
+  grid-area: 7 / 1 / 13 / 5;
+}
+.styled-event-7 .div4 {
+  grid-area: 1 / 5 / 13 / 7;
+}
+.styled-event-7 .div5 {
+  grid-area: 1 / 7 / 13 / 9;
+}
+.styled-event-7 .div6 {
+  grid-area: 1 / 9 / 13 / 11;
+}
+.section-gallery .row {
+  margin: 3rem 0;
+}
+.video-container {
+  margin: 0 1rem;
+}
+.video-container video {
+  max-width: 100%;
+  width: 100%;
+  box-shadow: 0px 0px 10px #00000068;
+}
+
+.video-container p {
+  margin: 0;
+  font-family: "exo2-regular";
+}
+
+.video-container .video-subtitle {
+  font-family: "exo2-semibolditalic";
+  color: var(--primary);
+}
+
+.video-title span {
+  font-family: "exo2-bold";
+}
+
+/* CONTACT PAGE */
+.section-contact h2 {
+  font-size: 2.5em;
+}
+.contact-info-container {
+  width: 70%;
+  margin: 2rem auto 0 auto;
+}
+.contact-info-container p,
+.contact-info-container a {
+  font-family: "ak-regular";
+  font-size: 1.4rem;
+  color: var(--darkCharcoal);
+  text-decoration: none;
+}
+
+.contact-info-container .contact-subtitle,
+.contact-subtitle {
+  font-size: 2em;
+  font-family: "exo2-bold";
+  color: var(--primary);
+}
+.contact-container {
+  background: url("/assets/img/Chondrofiller---Contáctanos-background.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 30rem;
+  overflow: visible;
+}
+.img-fachada {
+  position: absolute;
+  width: 38%;
+  object-fit: contain;
+  bottom: 0;
+  left: 2%;
+  z-index: 4;
+}
+.president-container {
+  overflow: visible;
+  background: #fff;
+  background: rgb(255, 254, 254);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 254, 254, 1) 10%,
+    rgba(224, 223, 223, 1) 100%
+  );
+}
+.test {
+  height: 20rem;
+  width: 100%;
+}
+.test div {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 20rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+.img-doctor {
+  height: 220%;
+  position: absolute;
+  bottom: -30%;
+  right: 0;
+  object-fit: cover;
+}
+.img-doctor-transparent {
+  position: absolute;
+  right: 0;
+  bottom: -30%;
+  z-index: 3;
+  height: 220%;
+  width: auto;
+  object-fit: cover;
+}
+.top-footer {
+  z-index: 4;
+  position: relative;
+}
+
+.contact-name {
+  font-family: "exo2-medium";
+  font-size: 1.4em;
+}
+
+.president-container p {
+  margin: 0;
+}
+
+.contact-data-container {
+  margin: 2rem auto;
+  width: 70%;
+}
+
 @media screen and (max-width: 1024px) {
   nav img {
     width: 10%;
   }
 
+  .navigation-link:link,
+  .navigation-link:visited {
+    padding-top: 0;
+  }
+
   .vr {
     display: none;
+  }
+
+  .footer-container {
+    width: 100%;
+    margin: 0 auto;
   }
 
   .hamburger-container {
@@ -664,7 +1121,7 @@ footer img {
   }
 
   .header-title {
-    height: 50vh;
+    height: 25vh;
   }
   h1 {
     font-size: 4.8em;
@@ -800,6 +1257,96 @@ footer img {
     padding-top: 0;
     position: static;
   }
+  /* US PAGE */
+  .section-who-are-we {
+    padding: 1rem;
+    background-position: 10%;
+  }
+
+  .section-who-are-we img {
+    max-width: 50%;
+  }
+
+  .section-who-are-we p {
+    width: 100%;
+  }
+
+  /* STUDIES PAGE */
+  .section-studies h2 {
+    text-align: center;
+    font-size: 3em;
+  }
+  .section-studies {
+    padding: 1.5rem;
+  }
+
+  .studies-list {
+    padding-left: 1rem;
+  }
+
+  .studies-list p {
+    padding-right: 1rem;
+  }
+
+  .studies-list a {
+    text-decoration: none;
+    text-align: center;
+    line-height: 1.5rem;
+  }
+
+  .img-jogging {
+    display: none;
+  }
+
+  /* EVENTS PAGE */
+  .events-list {
+    padding-left: 0;
+  }
+
+  /* GALLERY PAGE */
+  .video-container {
+    margin: 1rem 0;
+  }
+
+  .section-gallery .row {
+    margin: 1rem 0;
+  }
+  /* CONTACT PAGE */
+  .section-contact h2 {
+    text-align: center;
+    line-height: 0.85em;
+  }
+  .contact-container {
+    background: linear-gradient(180deg, var(--offWhite), #fbfbfb);
+  }
+
+  .president-container {
+    background: linear-gradient(180deg, #fbfbfb, #ededed);
+  }
+
+  .contact-container,
+  .president-container {
+    height: auto;
+  }
+
+  .contact-info-container,
+  .contact-data-container {
+    width: 100%;
+  }
+
+  .contact-info-container a {
+    text-decoration: underline;
+  }
+  .test,
+  .img-fachada {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1400px) {
+  .img-triangle-center {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -868,11 +1415,36 @@ footer img {
   footer li {
     font-size: 1.1em;
   }
+
+  .event-body {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .events-list p {
+    font-size: 1.5em;
+    line-height: 0.9rem;
+  }
 }
 
 @media screen and (min-width: 2000px) {
+  header.header-video {
+    height: 35vh;
+  }
+
+  header {
+    height: 25vh;
+  }
+  header div,
+  header img,
+  header video,
+  .header-img-right,
+  #start-video {
+    height: inherit;
+  }
   nav li {
-    font-size: 1.7em;
+    font-size: 1.9em;
   }
   p,
   li {
@@ -880,12 +1452,8 @@ footer img {
     line-height: 2.5rem;
   }
   h1 {
-    font-size: 6em;
-    line-height: 6rem;
-  }
-
-  #start-video {
-    height: 50vh;
+    font-size: 5em;
+    line-height: 5rem;
   }
 
   .section-product h2 {
@@ -937,8 +1505,19 @@ footer img {
   }
 
   /* FIND US PAGE */
+  .text-location {
+    padding: 20rem 0;
+  }
+  .text-location h2 {
+    font-size: 7em;
+  }
   .text-location p {
-    font-size: 2.5em;
+    font-size: 3em;
+    line-height: 3rem;
+  }
+
+  .country-list-container ul {
+    padding-left: 20rem;
   }
 
   .map-container {
@@ -948,6 +1527,116 @@ footer img {
   .country-list-container ul li {
     font-size: 5em;
     margin: 3.5rem 0;
+  }
+
+  /* US PAGE */
+
+  .section-who-are-we h2 {
+    font-size: 3em;
+  }
+
+  .section-who-are-we p {
+    font-size: 2.5em;
+  }
+
+  .event-header {
+    border-top-right-radius: 3rem;
+    border-top-left-radius: 3rem;
+  }
+  .event-header p {
+    padding: 1rem;
+  }
+
+  .event-location {
+    margin-top: 1rem;
+  }
+  .event-body {
+    height: 70rem;
+    border-bottom-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    padding: 2rem;
+  }
+
+  .events-list li p:first-of-type {
+    line-height: 4rem;
+  }
+
+  .section-studies h2 {
+    font-size: 5.5em;
+  }
+
+  /* CONTACT PAGE */
+  .img-fachada {
+    width: 30%;
+  }
+
+  .section-contact h2 {
+    font-size: 3.5em;
+  }
+
+  .contact-container {
+    height: auto;
+    padding-bottom: 4rem;
+  }
+
+  .contact-info-container .contact-subtitle,
+  .contact-subtitle {
+    font-size: 3em;
+  }
+  .contact-info-container p {
+    font-size: 2em;
+  }
+  .contact-info-container a {
+    font-size: 2rem;
+  }
+
+  .contact-data-container {
+    margin: 4rem auto;
+  }
+
+  .contact-name {
+    font-size: 2em;
+  }
+
+  .contact-email {
+    font-size: 1.9em;
+  }
+
+  .img-doctor,
+  .img-doctor-transparent {
+    bottom: -50%;
+    height: 241%;
+  }
+
+  .test,
+  .test div {
+    height: 27rem;
+  }
+
+  /* STUDIES PAGE */
+  .img-jogging {
+    width: 15%;
+  }
+
+  .studies-list li p,
+  .studies-list li a {
+    font-size: 1.3em;
+    line-height: 3rem;
+  }
+  .studies-list li span {
+    line-height: 4rem;
+  }
+  /* GALLERY PAGE */
+  .video-container {
+    margin: 2rem 4rem;
+  }
+  .video-container p {
+    font-size: 3em;
+    margin: 1rem 0;
+  }
+  /* FIND US PAGE */
+  .section-location {
+    max-height: 40vh;
   }
 }
 
@@ -979,8 +1668,9 @@ footer img {
 
   /* FIND US PAGE */
   .text-location p {
-    font-size: 3em;
-    line-height: 3rem;
+    font-size: 3.5em;
+
+    line-height: 4rem;
     margin-top: 1rem;
   }
 
@@ -999,12 +1689,12 @@ footer img {
   }
 
   #selected-country {
-    font-size: 3.5em;
+    font-size: 7em;
   }
 
-  .selected-country-container a,
   .selected-country-container p {
-    font-size: 1.2em;
+    font-size: 1.7em;
+    line-height: 4rem;
   }
 }
 
@@ -1012,5 +1702,21 @@ footer img {
   .country-list-container ul li {
     font-size: 8em;
     margin: 7rem 0;
+  }
+
+  .section-who-are-we h2 {
+    font-size: 4em;
+  }
+
+  .section-who-are-we p {
+    font-size: 3.5em;
+    line-height: 4rem;
+  }
+  .img-fachada {
+    width: 23%;
+  }
+
+  .contact-container {
+    padding: 8rem 0;
   }
 }
