@@ -248,12 +248,21 @@ header video {
   margin-bottom: 1rem;
 }
 .product-container-one {
-  background: url("/assets/img/background-our-product.jpg");
+  background: none;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
+.our-product-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
 .product-container-one p {
   width: 80%;
   margin: 2rem auto;
@@ -1139,6 +1148,10 @@ footer img {
     width: 100%;
     height: auto;
     object-fit: contain;
+  }
+
+  .our-product-video {
+    display: none;
   }
 
   .product-container-one {
