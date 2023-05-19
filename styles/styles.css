@@ -99,7 +99,7 @@ nav p {
   color: var(--primary);
 }
 .nav-home {
-  width: 5%;
+  width: 7%;
   margin-left: 3rem;
 }
 
@@ -1376,7 +1376,7 @@ footer img {
   }
 
   .nav-home {
-    width: 15%;
+    width: 20%;
   }
 
   .nav-links {
