@@ -98,11 +98,11 @@ nav p {
 .red {
   color: var(--primary);
 }
-
-nav img {
+.nav-home {
   width: 5%;
   margin-left: 3rem;
 }
+
 .hamburger-container {
   display: none;
 }
@@ -1079,8 +1079,12 @@ footer img {
 }
 
 @media screen and (max-width: 1024px) {
+  .nav-home {
+    width: 15%;
+    margin-left: 1rem;
+  }
   nav img {
-    width: 10%;
+    width: 100%;
   }
 
   .navigation-link:link,
@@ -1371,7 +1375,7 @@ footer img {
     font-size: 1.1em;
   }
 
-  nav img {
+  .nav-home {
     width: 15%;
   }
 
