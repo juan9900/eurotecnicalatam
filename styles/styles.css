@@ -16,10 +16,6 @@
 }
 
 @font-face {
-  src: url("/assets/fonts/Exo2-Bold.ttf");
-  font-family: "exo2-bold";
-}
-@font-face {
   src: url("/assets/fonts/Exo2-BoldItalic.ttf");
   font-family: "exo2-bolditalic";
 }
@@ -67,7 +63,7 @@ h1 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-family: "exo2-bold";
+  font-family: "Exo 2", sans-serif;
   color: var(--primary);
   font-size: 3.8em;
   line-height: 60px;
@@ -105,6 +101,7 @@ nav p {
 
 nav img {
   width: 5%;
+  margin-left: 3rem;
 }
 .hamburger-container {
   display: none;
@@ -300,7 +297,7 @@ header video {
   align-self: flex-start;
   margin-left: 4rem;
   padding-top: 3rem;
-  font-family: "exo2-bold";
+  font-family: "Exo 2", sans-serif;
   line-height: 0.8em;
 }
 
@@ -340,7 +337,7 @@ header video {
   align-self: flex-start;
   margin-left: 4rem;
   padding-top: 2rem;
-  font-family: "exo2-bold";
+  font-family: "Exo 2", sans-serif;
   line-height: 0.8em;
   margin-bottom: 1.5rem;
 }
@@ -403,7 +400,7 @@ footer ul {
 }
 
 footer h4 {
-  font-family: "exo2-bold";
+  font-family: "Exo 2", sans-serif;
   font-size: 1.5em;
 }
 footer p,
@@ -743,7 +740,7 @@ footer img {
 }
 
 .studies-list li a {
-  font-family: "exo2-bold";
+  font-family: "Exo 2", sans-serif;
   padding-left: 1.5rem;
 }
 
@@ -779,7 +776,7 @@ footer img {
 
 .events-list li p {
   color: var(--primary);
-  font-family: "exo2-bold";
+  font-family: "Exo 2", sans-serif;
 }
 .events-list li p:first-of-type {
   line-height: 2rem;
@@ -982,7 +979,7 @@ footer img {
 }
 
 .video-title span {
-  font-family: "exo2-bold";
+  font-family: "Exo 2", sans-serif;
 }
 
 /* CONTACT PAGE */
@@ -1004,7 +1001,7 @@ footer img {
 .contact-info-container .contact-subtitle,
 .contact-subtitle {
   font-size: 2em;
-  font-family: "exo2-bold";
+  font-family: "Exo 2", sans-serif;
   color: var(--primary);
 }
 .contact-container {
@@ -1448,12 +1445,16 @@ footer img {
 }
 
 @media screen and (min-width: 2000px) {
+  .footer-direction {
+    width: 60%;
+    margin: 0 auto;
+  }
   header.header-video {
-    height: 35vh;
+    height: 50vh;
   }
 
   header {
-    height: 25vh;
+    height: 35vh;
   }
   header div,
   header img,
@@ -1463,7 +1464,7 @@ footer img {
     height: inherit;
   }
   nav li {
-    font-size: 1.9em;
+    font-size: 1.5em;
   }
   p,
   li {
@@ -1471,8 +1472,8 @@ footer img {
     line-height: 2.5rem;
   }
   h1 {
-    font-size: 6em;
-    line-height: 6rem;
+    font-size: 5em;
+    line-height: 5rem;
   }
 
   .section-product h2 {
@@ -1525,13 +1526,13 @@ footer img {
 
   /* FIND US PAGE */
   .text-location {
-    padding: 20rem 0;
+    padding: 10rem 0;
   }
   .text-location h2 {
-    font-size: 7em;
+    font-size: 4em;
   }
   .text-location p {
-    font-size: 3em;
+    font-size: 2em;
     line-height: 3rem;
   }
 
@@ -1555,7 +1556,9 @@ footer img {
   }
   .section-who-are-we {
     height: auto;
+    padding: 5rem 5rem;
   }
+
   .section-who-are-we h2 {
     font-size: 3em;
   }
@@ -1563,13 +1566,19 @@ footer img {
   .section-who-are-we p {
     font-size: 2.5em;
   }
+  .section-who-are-we img {
+    max-width: 62%;
+    width: 100%;
+  }
+
+  /* EVENTS PAGE */
 
   .event-header {
     border-top-right-radius: 3rem;
     border-top-left-radius: 3rem;
   }
   .event-header p {
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
   .event-location {
@@ -1586,8 +1595,20 @@ footer img {
     line-height: 4rem;
   }
 
+  .events-list li p {
+    font-size: 1.3em;
+  }
+
+  .section-events h2 {
+    font-size: 5em;
+  }
+
   .section-studies h2 {
-    font-size: 5.5em;
+    font-size: 4.5em;
+  }
+
+  .studies-list li p {
+    font-size: 0.9em;
   }
 
   /* CONTACT PAGE */
@@ -1645,7 +1666,7 @@ footer img {
 
   .studies-list li p,
   .studies-list li a {
-    font-size: 1.3em;
+    font-size: 1.1em;
     line-height: 3rem;
   }
   .studies-list li span {
@@ -1656,8 +1677,8 @@ footer img {
     margin: 2rem 4rem;
   }
   .video-container p {
-    font-size: 3em;
-    margin: 1rem 0;
+    font-size: 2em;
+    margin: 0.5rem 0;
   }
   /* FIND US PAGE */
   .section-location {
