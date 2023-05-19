@@ -277,7 +277,7 @@ header video {
 }
 
 .how-it-works-text-container {
-  background: url("/assets/img/how-it-works-background.jpg");
+  background: url("/assets/img/how-it-works-background.webp");
   background-position: center left;
   background-size: cover;
   background-repeat: no-repeat;
@@ -1206,7 +1206,7 @@ footer img {
   }
 
   .section-how-it-works {
-    background: url("/assets/img/how-it-works-background.jpg");
+    background: url("/assets/img/how-it-works-background.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -1458,8 +1458,8 @@ footer img {
     line-height: 2.5rem;
   }
   h1 {
-    font-size: 5em;
-    line-height: 5rem;
+    font-size: 6em;
+    line-height: 6rem;
   }
 
   .section-product h2 {
@@ -1536,7 +1536,13 @@ footer img {
   }
 
   /* US PAGE */
-
+  body,
+  html {
+    height: 100%;
+  }
+  .section-who-are-we {
+    height: auto;
+  }
   .section-who-are-we h2 {
     font-size: 3em;
   }

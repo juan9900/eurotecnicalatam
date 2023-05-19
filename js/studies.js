@@ -5,7 +5,7 @@ $("document").ready(() => {
   function fadeOutAndIn() {
     img.fadeTo(500, 0, function () {
       setTimeout(function () {
-        img.attr("src", "/assets/img/estudios-header-" + imageIndex + ".jpg"); // Change the image source
+        img.attr("src", "/assets/img/estudios-header-" + imageIndex + ".webp"); // Change the image source
         img.fadeTo(500, 1); // Fade in the new image
         imageIndex = (imageIndex % 3) + 1; // Loop through 1, 2, 3
 
@@ -14,5 +14,7 @@ $("document").ready(() => {
     });
   }
 
-  fadeOutAndIn(); // Start the initial fade out and in
+  setTimeout(() => {
+    fadeOutAndIn(); // Start the initial fade out and in
+  }, 2000);
 });
